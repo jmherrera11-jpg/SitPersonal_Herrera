@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formulario Horario </title>
+</head>
+
+<body>
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../cto/contacto.html">Contactos</a>
+        <a href="../horario/horario.html"> Horario</a>
+        <a href="../multimedia/multimedia.html"> Multimedia</a>
+        <a href="buscar.html"> Buscar</a>
+    </nav>
+
+    <section class="Titulo">
+        <h2>Matriculas</h2>
+        <img src="../../imgs/Perfil.png" alt="ESPE">
+        <br> <br>
+    </section>
+
+    <section class="formulario">
+        <form method="GET" action="../../index.html">
+            <label for="Asignatura"></label>Asignatura</label>
+            <input type="text" placeholder="Escribe tu Asiganura" id="asignatura" name="Asignatura">
+            <br>
+            <br>
+            <label for="NRC"></label>NRC</label>
+            <input type="number" placeholder="NRC de la materia" id="NRC" name="NRC">
+            <br>
+            <br>
+            <label for="Dia"></label>Seleciona la fehca y hora de Matricula</label>
+            <input type="datetime-local" id="Dia" name="Dia">
+            <br>
+            <br>
+            <button type="submit"> Enviar </button>
+        </form>
+    </section><br>
+
+    <section>
+        <form action="#" method="post">
+            <label for="signatura"> Asignatura: </label>
+            <selct id="asignatura" name="Asignatura" required>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Programacion">Programacion</option>
+                <option value="Tecnologia">Tecnologia</option>
+            </selct> <br>
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800"> <br><br>
+    <button type="submit">Enviar</button>
+        </form>
+        
+    </section>
+
+    
+</body>
+</body>
+
+</html>
