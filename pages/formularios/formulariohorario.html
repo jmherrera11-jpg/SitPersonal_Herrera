@@ -7,14 +7,49 @@
 </head>
 
 <body>
-    <nav>
-        <a href="../../index.html">Home</a>
-        <a href="../cto/contacto.html">Contactos</a>
-        <a href="../horario/horario.html"> Horario</a>
-        <a href="../multimedia/multimedia.html"> Multimedia</a>
-        <a href="buscar.html"> Buscar</a>
-    </nav>
 
+    <nav style="text-align: center; background-color: #B3CFE5; padding: 15px; border-radius: 10px;">
+
+        <a href="../../index.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Home
+        </a>
+
+        <a href="../cto/contacto.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Contactos
+        </a>
+
+        <a href="../horario/horario.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Horario
+        </a>
+
+        <a href="../multimedia/multimedia.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Multimedia
+        </a>
+
+        <a href="../buscar/buscar.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Buscar
+        </a>
+
+        <a href="formulariohorario.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Formulario Horario
+        </a>
+
+        <a href="../formularios/formulariosalida.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Formulario Intereses
+        </a>
+
+        <a href="../login/login.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Login
+        </a>
+    </nav>
     <section class="Titulo">
         <h2>Matriculas</h2>
         <img src="../../imgs/Perfil.png" alt="ESPE">
@@ -22,7 +57,9 @@
     </section>
 
     <section class="formulario">
-        <form method="GET" action="../../index.html">
+        <form method="GET" action="../../index.html"></form>
+        <fieldset>
+
             <label for="Asignatura"></label>Asignatura</label>
             <input type="text" placeholder="Escribe tu Asiganura" id="asignatura" name="Asignatura">
             <br>
@@ -35,28 +72,24 @@
             <input type="datetime-local" id="Dia" name="Dia">
             <br>
             <br>
-            <button type="submit"> Enviar </button>
-        </form>
-    </section><br>
 
-    <section>
-        <form action="#" method="post">
+
             <label for="signatura"> Asignatura: </label>
-            <selct id="asignatura" name="Asignatura" required>
+
+            <select>
                 <option value="Matematicas">Matematicas</option>
                 <option value="Programacion">Programacion</option>
                 <option value="Tecnologia">Tecnologia</option>
-            </selct> <br>
+            </select> </br></br>
 
-    <label for="hora">Hora:</label>
-    <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800"> <br><br>
-    <button type="submit">Enviar</button>
-        </form>
-        
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800"> </br></br>
+
+            <button type="submit">Enviar</button>
+
+            <fieldset />
+            </form>
     </section>
-
-    
-</body>
 </body>
 
 </html>

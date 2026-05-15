@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title> Buzon de Quejas </title>
+    </head>
+    <header>
+       <h1> Buzon de sugerencias </h1>
+    </header>
+    <body>
+        <nav>
+
+        </nav>
+
+        <section class="Buzon">
+            <form method="GET" action="#">
+                <fieldset>
+                    <legend>Datos de Usuario</legend>
+                    <label for="Nombre" id="Nombre" name="Nombre"> Nombre </label>
+                    <input type="text">
+                    <br><br>
+                    <label for="Correo" id="Correo" name="Nombre"> Correo </label>
+                    <input type="email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentario de satisfacción</legend>
+
+                    <label for="Buzon"> Comentario</label> <br>
+                    <textarea name="Buzon" id="Buzon" rows="10"></textarea> <br><br>
+
+                    <label for="exp"> Experiencia</label>
+                    <select name="xp" id="xp">
+                        <option value="Buena"> Buena </option>
+                        <option value="Meida"> Media </option>
+                        <option value="Mala"> Mala </option>
+                    </select><br><br>
+                    
+                    <label for="Subir">Subir Evidencia</label>
+                    <input type="file">
+                </fieldset>
+                <br>
+                <button type="submit">Enviar respuesta</button>
+            </form>
+        </section>
+    </body>
+</html>
