@@ -35,6 +35,11 @@
             Buscar
         </a>
 
+        <a href="formularioregistro.html"
+            style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
+            Formulario Registro
+        </a>
+
         <a href="formulariohorario.html"
             style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
             Formulario Horario
@@ -51,44 +56,42 @@
         </a>
     </nav>
     <section class="Titulo">
-        <h2>Matriculas</h2>
+        <h2 style="color: #feffff; background-color: #2754a7;">Matriculas</h2>
         <img src="../../imgs/Perfil.png" alt="ESPE">
         <br> <br>
     </section>
 
     <section class="formulario">
-        <form method="GET" action="../../index.html"></form>
-        <fieldset>
-
-            <label for="Asignatura"></label>Asignatura</label>
-            <input type="text" placeholder="Escribe tu Asiganura" id="asignatura" name="Asignatura">
+        <form method="GET" action="../../index.html">
+        <fieldset style="color: #2754a7;">
+            <legend style="color: #2754a7;"><b>Busqueda de Materia </b></legend>
+            <label for="Asignatura">Asignatura</label>
+            <input type="text" placeholder="Escribe tu Asiganura" id="asignatura" name="Asignatura" required
+                maxlength="16" minlength="8">
             <br>
             <br>
-            <label for="NRC"></label>NRC</label>
-            <input type="number" placeholder="NRC de la materia" id="NRC" name="NRC">
+            <label for="NRC">NRC</label>
+            <input type="text" placeholder="NRC de la materia" id="NRC" name="NRC" required maxlength="5"
+                minlength="5" inputmode="numeric">
             <br>
             <br>
             <label for="Dia"></label>Seleciona la fehca y hora de Matricula</label>
-            <input type="datetime-local" id="Dia" name="Dia">
+            <input type="datetime-local" id="Dia" name="Dia" required>
             <br>
             <br>
-
-
             <label for="signatura"> Asignatura: </label>
-
-            <select>
+            <select required>
                 <option value="Matematicas">Matematicas</option>
                 <option value="Programacion">Programacion</option>
                 <option value="Tecnologia">Tecnologia</option>
             </select> </br></br>
 
-            <label for="hora">Hora:</label>
-            <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800"> </br></br>
-
-            <button type="submit">Enviar</button>
-
-            <fieldset />
-            </form>
+            <label for="hora" requaired >Hora:</label>
+            <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800"><br><br>
+        <button type="submit" style="color: #feffff; background-color: #2754a7;">Enviar</button>
+        </fieldset>
+        
+        </form>
     </section>
 </body>
 

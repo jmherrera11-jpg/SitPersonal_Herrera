@@ -2,11 +2,12 @@
 <html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <title> Formulario de Contacto </title>
 </head>
 
 <body>
-
+    
     <nav style="text-align: center; background-color: #B3CFE5; padding: 15px; border-radius: 10px;">
 
         <a href="../../index.html"
@@ -34,17 +35,17 @@
             Buscar
         </a>
 
-        <a href="../formularios/formularioregistro.html"
+        <a href="formularioregistro.html"
             style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
             Formulario Registro
         </a>
 
-        <a href="../formularios/formulariohorario.html"
+        <a href="formulariohorario.html"
             style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
             Formulario Horario
         </a>
 
-        <a href="../formularios/formulariosalida.html"
+        <a href="formulariosalida.html"
             style="font-family: Poppins, sans-serif; color: #0A1931; margin: 10px; text-decoration: none;">
             Formulario Intereses
         </a>
@@ -54,33 +55,54 @@
             Login
         </a>
     </nav>
-
+    
     <section class="Titulo">
-        <h2 style="color: #2754a7;">Inicio de sesión</h2>
+        <h2 style="color: #2754a7;">Formulario de Contacto y Registro</h2>
         <img src="../../imgs/Perfil.png" alt="ESPE">
         <br> <br>
     </section>
-
     <section class="formulario">
-        <form method="GET" action="../formularios/formularioregistro.html">
-            <fieldset style="color: #2754a7;"> 
-                <legend style="color: #2754a7;"><b>Formulario de Inicio de Sesión</b></legend>
-            <label for="Usuario">Usuario</label>
-            <input type="text" placeholder="Escribe tu Usuario" id="Usuario" name="Usuario" required maxlength="15"
-                minlength="5">
+        <form method="GET" action="../../index.html" style="color: #2754a7;">
+
+            <label for="Nombres">Nombres</label>
+            <input type="text" placeholder="Nombre y Apellido" id="Nombres" name="Nombres" required maxlength="16"
+                minlength="10">
             <br>
             <br>
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" id="Contraseña" name="Contraseña" placeholder="Escribe tu contraseña" required
-                minlength="8" maxlength="16"
-                pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_\-])[A-Za-z\d@$!%*?&.#_\-]{8,16}"
-                title="Debe incluir letras, números y al menos un carácter especial.">
+            <label for="Edad">Edad</label>
+            <input type="number" placeholder="Escribe tu edad" id="Edad" name="Edad" required>
             <br>
             <br>
+            <label for="Correo">Correo</label>
+            <input type="email" maxlength="16" minlength="10" placeholder="Escribe tu correo" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="Fecha">Fecha de visita</label>
+            <input type="date" required> <br><br>
+
+            <label for="Tema">Tema</label>
+            <input type="text" id="Tema" name="Tema" required maxlength="15" minlength="5"
+                placeholder="Aqui escribe tu tema" id="tema" name="tema"><br><br>
             <button type="submit" style="color: #feffff; background-color: #2754a7;"> Enviar </button>
-            </fieldset>
         </form>
     </section>
+    <section class="Explciación">
+        <article>
+            <h2>Explciación del Formulario</h2>
+            <p>Este formulario es para registrar datos de una persona que ha ingresado a la pagina web. <br>
+                Tiene un registro con nombre, edad, correo y fecha de visita.
+            </p>
+        </article>
+    </section>
+    <hr>
+    <footer>
+        <h3>
+            <p>Creado por Jhon Herrera</p>
+        </h3>
+        <p>Clase de Fundamentos Web - HTML semántico </p>
+        <p>Gracias por revisar el perfil</p>
+    </footer>
+    <hr>
 </body>
 
 </html>
